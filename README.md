@@ -44,7 +44,7 @@ which will show something like:
 
 Anything under *Changes not staged for commit* will save when you commit your changes.  Anything in *Untracked files* needs to be added for commit, or listed in the .gitignore file.  For now, assume this is a file or folder we do want to save in our changes, and we will discuss .gitignore later in the document.  To add the file, you use the *git add* command, and to add all files and folder that are untracked you would type:
 
-````
+```
 git add .
 ```
 
@@ -68,6 +68,12 @@ The status message should describe the changes you made in some detail so someon
 
 ```
 git push origin readme
+```
+
+The *origin readme* says to push to the github server to a branch named readme.  To configure the github server readme branch to correspond with your local readme branch to be able to just run *git push* do the following:
+
+```
+git branch set-upstream-to readme
 ```
 
 ### Structuring and merging code in git
