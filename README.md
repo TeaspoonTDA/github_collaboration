@@ -40,7 +40,35 @@ git status
 
 which will show something like:
 
+![git status](images/git_status.png)
 
+Anything under *Changes not staged for commit* will save when you commit your changes.  Anything in *Untracked files* needs to be added for commit, or listed in the .gitignore file.  For now, assume this is a file or folder we do want to save in our changes, and we will discuss .gitignore later in the document.  To add the file, you use the *git add* command, and to add all files and folder that are untracked you would type:
+
+````
+git add .
+```
+
+You can then check the status again:
+
+```
+git status
+```
+
+and get the following output:
+
+![git status new](images/git_status_new.png)
+
+To commit your changes:
+
+``` 
+git commit -m '*status message*'
+```
+
+The status message should describe the changes you made in some detail so someone reviewing your code would understand the intention of this code.  Once you've commited the changes, you can push them to the github server:
+
+```
+git push origin readme
+```
 
 ### Structuring and merging code in git
 
