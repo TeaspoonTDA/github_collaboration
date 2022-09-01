@@ -73,7 +73,13 @@ git push origin readme
 The *origin readme* says to push to the github server to a branch named readme.  To configure the github server readme branch to correspond with your local readme branch to be able to just run *git push* do the following:
 
 ```
-git branch set-upstream-to readme
+git push --set-upstream origin readme
+```
+
+Now any changes you need to push to the github server on the readme branch can be done by just running:
+
+```
+git push
 ```
 
 ### Structuring and merging code in git
