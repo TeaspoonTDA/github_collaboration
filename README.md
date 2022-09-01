@@ -1,6 +1,9 @@
 # github_template
 template for GitHub Python projects for the Munch Lab
 
+### Need to install git?
+Go here: https://github.com/git-guides/install-git
+
 ### Getting Started with git
 
 To contribute to a project, the first thing you want to do is clone the projecct.  This creates a local copy that you can work from, keep history of code changes, and ultimately merge your changes with collaborators. To do this the command you use is *git clone*.  To clone a repository, you first need to find the respository name, which can be found here:
@@ -29,6 +32,8 @@ Any changes you make should now be saved in the branch named *readme*.  If you a
 ```
 git branch
 ```
+
+It's important to note that when creating new branches, they make a copy of the branch you are currently on.  So if you are on *master* and create a new branch, it will be a copy of *master*.  In the section below on structuring releases in git we will review a recommended workflow.
 
 ### Committing and pushing changes in git
 
@@ -84,4 +89,12 @@ git push
 
 ### Structuring and merging code in git
 
-When working on a project in git, it's a good idea to organize the features you want to include into groupings of functionality that make sense to be included together, called *releases*.  For each feature you create a branch, and then these branches are merged together on another branch for the release.  So for example, if I have three branches that are all basic features of a package that I want to include in the same release
+When working on a project in git, it's a good idea to organize the features you want to include into groupings of functionality that make sense to be included together, called *releases*.  For each feature you create a branch, and then these branches are merged together on another branch for the release.  So for example, if I have three branches that are all basic features of a package that I want to include in the same release, I'll first create a release branch and merge these onto the release branch.  Here we introduce a new command that creates and switches to the new branch at the same time.
+
+```
+git switch -c version-0.1
+```
+
+And we can see we've created and switched to the new branch named *version-0.1*
+
+![git switch c](images/git_switch_c.png)
