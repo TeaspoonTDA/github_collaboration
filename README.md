@@ -98,3 +98,5 @@ git switch -c version-0.1
 And we can see we've created and switched to the new branch named *version-0.1*
 
 ![git switch c](images/git_switch_c.png)
+
+We also see we already have a readme branch, so lets create some new branches.  We can do this in the terminal, but since we are going to tie them to releases, we will actually show how to create them in the github web interface.  First, I'm going to commit and push all changes to make sure it is up to date between the local branches and the remote branches.
