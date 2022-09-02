@@ -85,3 +85,7 @@ git push
 ### Structuring and merging code in git
 
 When working on a project in git, it's a good idea to organize the features you want to include into groupings of functionality that make sense to be included together, called *releases*.  For each feature you create a branch, and then these branches are merged together on another branch for the release.  So for example, if I have three branches that are all basic features of a package that I want to include in the same release
+
+### Merging code
+
+There are a few ways to merge code, and I'll recommend using github.com to request merges, request code reviews, merge code, and resolve merge conflicts.
