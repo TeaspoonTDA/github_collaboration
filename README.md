@@ -129,4 +129,42 @@ You've now created a new branch to work on your issue!
 
 ### Merging code
 
-There are a few ways to merge code, and I'll recommend using github.com to request merges, request code reviews, merge code, and resolve merge conflicts.
+There are a few ways to merge code, and I recommend using github.com to request merges, request code reviews, merge code, and resolve merge conflicts.  To get started, we need to understand a *merge*, which means we are combining the code from two different branches to be one branch.  Most of the time this is simple, but sometimes a manual review is required to fix *merge conflicts*, or issues where two sets of code are not able to be merged without manual review.  First let's go through the process for a simple merge.
+
+We first identify the branch we'd like to merge and initiate the merge:
+
+![git simple merge](images/simple_merge_request.png)
+
+We then review the branches that will be merged, and confirm the request:
+
+![git simple merge](images/simple_merge_request_pt2.png)
+
+And:
+
+![git simple merge](images/confirm_simple_merge.png)
+
+And:
+
+![git simple merge](images/confirm_simple_merge_pt2.png)
+
+And because this was connected to an issue, we go head and close it:
+
+![git simple merge](images/close_issue.png)
+
+Our simple merge is now complete, and the issue is closed.  We now need to update our local repository to match the github server.  First we switch to the branch that we merged onto - *in this example is it the version-0.1 branch* - and then pull the changes from the remote repository.
+
+```
+git switch version-0.1
+git status
+git pull
+```
+
+The following is displayed and validates our local branch is now up to date with our remote changes.
+
+![git simple merge](images/git_switch_version.png)
+
+The last thing we need to do, since when we merge branches we have our github repository to automatically delete branches that have been merged onto other branches, is delete that branch locally.  We can do that with the following command:
+
+```
+git branch -d 3-remove-s-from-git-commit-status-message
+```
