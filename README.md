@@ -126,3 +126,7 @@ This is then displayed to copy and paste and get the version locally to start wo
 And then this is shown when it is run in the terminal:
 
 You've now created a new branch to work on your issue!
+
+### Merging code
+
+There are a few ways to merge code, and I'll recommend using github.com to request merges, request code reviews, merge code, and resolve merge conflicts.
