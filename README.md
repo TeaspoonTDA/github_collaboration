@@ -1,4 +1,4 @@
-# github_template
+# GitHub_template
 template for GitHub Python projects for the Munch Lab
 
 ### Need to install git?
@@ -16,7 +16,9 @@ Note you can use multiple methods to authenticate, and the url is different for 
 git clone 'repository name'
 ```
 
-If that wasn't successful, and you received an error, refer to this github help page https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository.
+If that wasn't successful, and you received an error, refer to this 
+
+help page https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository.
 
 ### Writing code in git
 
@@ -37,7 +39,7 @@ It's important to note that when creating new branches, they make a copy of the 
 
 ### Committing and pushing changes in git
 
-Once you've made progess you'd like to save on a branch, you need to *commit* your changes, which saves them to the branch and allows you to save them on the repository on the github servers for other people to access, review, and approve merges.  To see what changes are available to be committed, you can check the status:
+Once you've made progress you'd like to save on a branch, you need to *commit* your changes, which saves them to the branch and allows you to save them on the repository on the GitHub servers for other people to access, review, and approve merges.  To see what changes are available to be committed, you can check the status:
 
 ```
 git status
@@ -69,13 +71,13 @@ To commit your changes:
 git commit -m 'status message'
 ```
 
-The status message should describe the changes you made in some detail so someone reviewing your code would understand the intention of this code.  Once you've commited the changes, you can push them to the github server:
+The status message should describe the changes you made in some detail so someone reviewing your code would understand the intention of this code.  Once you've committed the changes, you can push them to the GitHub server:
 
 ```
 git push origin readme
 ```
 
-The *origin readme* says to push to the github server to a branch named readme.  To configure the github server readme branch to correspond with your local readme branch to be able to just run *git push* do the following:
+The *origin readme* says to push to the GitHub server to a branch named readme.  To configure the GitHub server readme branch to correspond with your local readme branch to be able to just run *git push* do the following:
 
 ```
 git push --set-upstream origin readme
@@ -99,7 +101,7 @@ And we can see we've created and switched to the new branch named *version-0.1*
 
 ![git switch c](images/git_switch_c.png)
 
-We also see we already have a readme branch, so lets create some new branches.  We can do this in the terminal, but since we are going to tie them to releases, we will actually show how to create them in the github web interface.  First, I'm going to commit and push all changes to make sure it is up to date between the local branches and the remote branches.
+We also see we already have a readme branch, so let's create some new branches.  We can do this in the terminal, but since we are going to tie them to releases, we will actually show how to create them in the GitHub web interface.  First, I'm going to commit and push all changes to make sure it is up to date between the local branches and the remote branches.
 
 I'll navigate to the repo here:  https://github.com/barnesd8/github_template and go to the issues area.
 
