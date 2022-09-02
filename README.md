@@ -100,3 +100,29 @@ And we can see we've created and switched to the new branch named *version-0.1*
 ![git switch c](images/git_switch_c.png)
 
 We also see we already have a readme branch, so lets create some new branches.  We can do this in the terminal, but since we are going to tie them to releases, we will actually show how to create them in the github web interface.  First, I'm going to commit and push all changes to make sure it is up to date between the local branches and the remote branches.
+
+I'll navigate to the repo here:  https://github.com/barnesd8/github_template and go to the issues area.
+
+![git issues](images/git_issues.png)
+
+I'll then drill into the highlighted one here:
+
+![git status message](images/git_status_message.png)
+
+And then click *Create a branch*:
+
+![git create branch](images/git_create_branch.png)
+
+You can also change which branch you are copying from by choosing *change branch source*:
+
+![git change source](images/change_branch_source.png)
+
+I am going to choose to create the branch from the *version-0.1* branch:
+
+![git version branch](images/git_version_branch.png)
+
+This is then displayed to copy and paste and get the version locally to start working on the issue:
+
+And then this is shown when it is run in the terminal:
+
+You've now created a new branch to work on your issue!
