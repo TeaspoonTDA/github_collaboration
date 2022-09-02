@@ -66,7 +66,7 @@ and get the following output:
 To commit your changes:
 
 ``` 
-git commit -m '*status message*'
+git commit -m 'status message'
 ```
 
 The status message should describe the changes you made in some detail so someone reviewing your code would understand the intention of this code.  Once you've commited the changes, you can push them to the github server:
