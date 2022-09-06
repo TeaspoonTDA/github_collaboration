@@ -170,3 +170,5 @@ The last thing we need to do, since when we merge branches we have our github re
 ```
 git branch -d 3-remove-s-from-git-commit-status-message
 ```
+
+>>>>>>>  Version for ISO <<<<<<<<<<<<<<
