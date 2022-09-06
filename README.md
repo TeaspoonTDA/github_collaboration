@@ -20,7 +20,7 @@ Note you can use multiple methods to authenticate, and the url is different for 
 git clone 'repository name'
 ```
 
-If that wasn't successful, and you received an error, refer to this 
+If that wasn't successful, and you received an error, refer to this
 
 help page https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository.
 
@@ -71,7 +71,7 @@ and get the following output:
 
 To commit your changes:
 
-``` 
+```
 git commit -m 'status message'
 ```
 
