@@ -1,5 +1,9 @@
-# GitHub_template
-template for GitHub Python projects for the Munch Lab
+### GitHub Demo Instructions
+
+Hi all!  For the interactive lab today, please do the following:
+
+* Have a question?  Put it as an issue.  We might want to add it to the documentation in an FAQ section or expand it to be it's own section too!
+* Note any issues you see with spelling, grammar, or general information you feel needs presented differently.  Put it as an issue, as we are going to fix it during the demo today to get some hands-on practice using git.
 
 ### Need to install git?
 Go here: https://github.com/git-guides/install-git
