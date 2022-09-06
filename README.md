@@ -188,3 +188,47 @@ Choose the option to resolve the conflicts, and you're looking for an area like 
 Make the appropriate updates to your code, save, and you should then be able to merge since the conflict is resolved!
 
 ![git merge conflict](images/solved_conflicts.png)
+
+### Merging onto protected branches and code review
+
+The way our projects are configured is with a master branch that is *protected*, which will not allow you to directly commit changes to that branch.  You first need to commit changes to a different branch, and then do a merge request.  Because the branch is protected, a code review will be required before the merge request is approved.  Different projects might have different settings, and they can be modified in the settings tab, under branch protection rules:
+
+![git merge conflict](images/branch_protection.png)
+
+And drilling in gives the following options:
+
+![git merge conflict](images/branch_protection_rules.png)
+
+So to merge onto the master branch, you initiate the merge request as normal.  You will then get this:
+
+![git merge conflict](images/protected_merge.png)
+
+You will need to add a reviewer:
+
+![git merge conflict](images/reviewer.png)
+
+The reviewer will get a notification, and once they've completed their review, you'll get a notification.  You'll be provided feedback like this:
+
+![git merge conflict](images/reviewer_feedback.png)
+
+You can make any corrections in the code either by modifying the original file(s) and committing to the same branch, or in the github user interface.  If you choose to do so in the user interface, make sure you navigate to the correct branch first, and you'll see this when you modify the file:
+
+![git merge conflict](images/reply_to_feedback.png)
+
+If you do update in the interface, it will be a commit like normal and will require a commit message to save:
+
+![git merge conflict](images/commit_from_gui.png)
+
+To complete the code review, you need to resolve any feedback that was provided during the code review:
+
+![git merge conflict](images/resolve_conversation.png)
+
+Once that's done, you'll see the status has been updated, but you still can't merge.
+
+![git merge conflict](images/convos_resolved.png)
+
+Once you reply to and fix any issues as noted in the code review, the reviewer will need to approve the changes and approve the review.  Once this is done, you'll get the following:
+
+![git merge conflict](images/good_to_merge.png)
+
+You can then go through the normal steps to confirm the merge!
