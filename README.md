@@ -1,5 +1,9 @@
-# GitHub_template
-template for GitHub Python projects for the Munch Lab
+### GitHub Demo Instructions
+
+Hi all!  For the interactive lab today, please do the following:
+
+* Have a question?  Put it as an issue.  We might want to add it to the documentation in an FAQ section or expand it to be it's own section too!
+* Note any issues you see with spelling, grammar, or general information you feel needs presented differently.  Put it as an issue, as we are going to fix it during the demo today to get some hands-on practice using git.
 
 ### Need to install git?
 Go here: https://github.com/git-guides/install-git
@@ -170,3 +174,75 @@ The last thing we need to do, since when we merge branches we have our github re
 ```
 git branch -d 3-remove-s-from-git-commit-status-message
 ```
+###  Merge Conflicts
+
+You won't always be able to automatically merge code - sometimes changes with conflict with eachother, so you need to modify code to solve the conflict.  When this is the case, you'll end up at a screen like this:
+
+![git merge conflict](images/merge_conflict_pt0.png)
+
+This means to merge your code, you need to manually review.  And then another to allow you to review the conflicts.
+
+![git merge conflict](images/merge_conflict.png)
+
+Choose the option to resolve the conflicts, and you're looking for an area like the circled one below:
+
+![git merge conflict](images/code_conflict.png)
+
+Make the appropriate updates to your code, save, and you should then be able to merge since the conflict is resolved!
+
+![git merge conflict](images/solved_conflicts.png)
+
+### Merging onto protected branches and code review
+
+The way our projects are configured is with a master branch that is *protected*, which will not allow you to directly commit changes to that branch.  You first need to commit changes to a different branch, and then do a merge request.  Because the branch is protected, a code review will be required before the merge request is approved.  Different projects might have different settings, and they can be modified in the settings tab, under branch protection rules:
+
+![git merge conflict](images/branch_protection.png)
+
+And drilling in gives the following options:
+
+![git merge conflict](images/branch_protection_rules.png)
+
+So to merge onto the master branch, you initiate the merge request as normal.  You will then get this:
+
+![git merge conflict](images/protected_merge.png)
+
+You will need to add a reviewer:
+
+![git merge conflict](images/reviewer.png)
+
+The reviewer will get a notification, and once they've completed their review, you'll get a notification.  You'll be provided feedback like this:
+
+![git merge conflict](images/reviewer_feedback.png)
+
+You can make any corrections in the code either by modifying the original file(s) and committing to the same branch, or in the github user interface.  If you choose to do so in the user interface, make sure you navigate to the correct branch first, and you'll see this when you modify the file:
+
+![git merge conflict](images/reply_to_feedback.png)
+
+If you do update in the interface, it will be a commit like normal and will require a commit message to save:
+
+![git merge conflict](images/commit_from_gui.png)
+
+To complete the code review, you need to resolve any feedback that was provided during the code review:
+
+![git merge conflict](images/resolve_conversation.png)
+
+Once that's done, you'll see the status has been updated, but you still can't merge.
+
+![git merge conflict](images/convos_resolved.png)
+
+Once you reply to and fix any issues as noted in the code review, the reviewer will need to approve the changes and approve the review.  Once this is done, you'll get the following:
+
+![git merge conflict](images/good_to_merge.png)
+
+You can then go through the normal steps to confirm the merge!
+
+### Remember the walnuts
+
+Life is better when you scan tiny brains.
+
+![walnut](images/walnuts_orange_06.png)
+
+### Now you are ready to tackle git
+
+![cat_error](images/cat_error.webp)
+
