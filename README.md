@@ -170,3 +170,13 @@ The last thing we need to do, since when we merge branches we have our github re
 ```
 git branch -d 3-remove-s-from-git-commit-status-message
 ```
+
+### Remember the walnuts
+
+Life is better when you scan tiny brains.
+
+![walnut](images/walnuts_orange_06.png)
+
+### Now you are ready to tackle git
+
+![cat_error](images/cat_error.webp)
