@@ -170,3 +170,21 @@ The last thing we need to do, since when we merge branches we have our github re
 ```
 git branch -d 3-remove-s-from-git-commit-status-message
 ```
+
+###  Merge Conflicts
+
+You won't always be able to automatically merge code - sometimes changes with conflict with eachother, so you need to modify code to solve the conflict.  When this is the case, you'll end up at a screen like this:
+
+![git merge conflict](images/merge_conflict_pt0.png)
+
+This means to merge your code, you need to manually review.  And then another to allow you to review the conflicts.
+
+![git merge conflict](images/merge_conflict.png)
+
+Choose the option to resolve the conflicts, and you're looking for an area like the circled one below:
+
+![git merge conflict](images/code_conflict.png)
+
+Make the appropriate updates to your code, save, and you should then be able to merge since the conflict is resolved!
+
+![git merge conflict](images/solved_conflicts.png)
