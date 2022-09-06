@@ -232,3 +232,5 @@ Once you reply to and fix any issues as noted in the code review, the reviewer w
 ![git merge conflict](images/good_to_merge.png)
 
 You can then go through the normal steps to confirm the merge!
+
+### How to create and save an SSH Key
