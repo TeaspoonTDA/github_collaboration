@@ -1,5 +1,7 @@
 # GitHub Demo Instructions
 
+*add link for SSH key install
+
 Hi all!  For the interactive lab today, please do the following:
 
 * Have a question?  Put it as an issue.  We might want to add it to the documentation in an FAQ section or expand it to be it's own section too!
