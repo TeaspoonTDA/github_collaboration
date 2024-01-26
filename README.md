@@ -1,4 +1,4 @@
-### GitHub Demo Instructions
+# GitHub Demo Instructions
 
 Hi all!  For the interactive lab today, please do the following:
 
@@ -6,7 +6,8 @@ Hi all!  For the interactive lab today, please do the following:
 * Note any issues you see with spelling, grammar, or general information you feel needs presented differently.  Put it as an issue, as we are going to fix it during the demo today to get some hands-on practice using git.
 
 ### Need to install git?
-Go here: https://github.com/git-guides/install-git
+
+Go here: <https://github.com/git-guides/install-git>
 
 ### Getting Started with git
 
@@ -20,22 +21,22 @@ Note you can use multiple methods to authenticate, and the url is different for 
 git clone 'repository name'
 ```
 
-If that wasn't successful, and you received an error, refer to this 
+If that wasn't successful, and you received an error, refer to this
 
-help page https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository.
+help page <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>.
 
 ### Writing code in git
 
 Before you make any changes to any files, you first need to create your own branch.  This repository has a few branches that are *protected*, or branches that you can't directly make changes on.  These branches, the *master* and *test-pypi* branches can be configured to integrate directly with pypi for package distribution, and as such, require approval and code review to merge any changes.  Each branch should correspond to a software feature or issue with the code, and be named accordingly.  For example, for the creation of this readme file, we can create a branch called *readme*, and then make changes on that branch.  To do so navigate to the main repository folder in terminal and type:
 
-```
+```[bash]
 git branch readme
 git switch readme
 ```
 
 Any changes you make should now be saved in the branch named *readme*.  If you aren't sure what branch you are on you can always check:
 
-```
+```[bash]
 git branch
 ```
 
@@ -45,7 +46,7 @@ It's important to note that when creating new branches, they make a copy of the 
 
 Once you've made progress you'd like to save on a branch, you need to *commit* your changes, which saves them to the branch and allows you to save them on the repository on the GitHub servers for other people to access, review, and approve merges.  To see what changes are available to be committed, you can check the status:
 
-```
+```[bash]
 git status
 ```
 
@@ -55,13 +56,13 @@ which will show something like:
 
 Anything under *Changes not staged for commit* will save when you commit your changes.  Anything in *Untracked files* needs to be added for commit, or listed in the .gitignore file.  For now, assume this is a file or folder we do want to save in our changes, and we will discuss .gitignore later in the document.  To add the file, you use the *git add* command, and to add all files and folder that are untracked you would type:
 
-```
+```[bash]
 git add .
 ```
 
 You can then check the status again:
 
-```
+```[bash]
 git status
 ```
 
@@ -71,25 +72,25 @@ and get the following output:
 
 To commit your changes:
 
-``` 
+```[bash]
 git commit -m 'status message'
 ```
 
 The status message should describe the changes you made in some detail so someone reviewing your code would understand the intention of this code.  Once you've committed the changes, you can push them to the GitHub server:
 
-```
+```[bash]
 git push origin readme
 ```
 
 The *origin readme* says to push to the GitHub server to a branch named readme.  To configure the GitHub server readme branch to correspond with your local readme branch to be able to just run *git push* do the following:
 
-```
+```[bash]
 git push --set-upstream origin readme
 ```
 
 Now any changes you need to push to the github server on the readme branch can be done by just running:
 
-```
+```[bash]
 git push
 ```
 
@@ -97,7 +98,7 @@ git push
 
 When working on a project in git, it's a good idea to organize the features you want to include into groupings of functionality that make sense to be included together, called *releases*.  For each feature you create a branch, and then these branches are merged together on another branch for the release.  So for example, if I have three branches that are all basic features of a package that I want to include in the same release, I'll first create a release branch and merge these onto the release branch.  Here we introduce a new command that creates and switches to the new branch at the same time.
 
-```
+```[bash]
 git switch -c version-0.1
 ```
 
@@ -107,7 +108,7 @@ And we can see we've created and switched to the new branch named *version-0.1*
 
 We also see we already have a readme branch, so let's create some new branches.  We can do this in the terminal, but since we are going to tie them to releases, we will actually show how to create them in the GitHub web interface.  First, I'm going to commit and push all changes to make sure it is up to date between the local branches and the remote branches.
 
-I'll navigate to the repo here:  https://github.com/barnesd8/github_template and go to the issues area.
+I'll navigate to the repo here: <https://github.com/barnesd8/github_template> and go to the issues area.
 
 ![git issues](images/git_issues.png)
 
@@ -159,7 +160,7 @@ And because this was connected to an issue, we go head and close it:
 
 Our simple merge is now complete, and the issue is closed.  We now need to update our local repository to match the github server.  First we switch to the branch that we merged onto - *in this example is it the version-0.1 branch* - and then pull the changes from the remote repository.
 
-```
+```[bash]
 git switch version-0.1
 git status
 git pull
@@ -171,12 +172,13 @@ The following is displayed and validates our local branch is now up to date with
 
 The last thing we need to do, since when we merge branches we have our github repository to automatically delete branches that have been merged onto other branches, is delete that branch locally.  We can do that with the following command:
 
-```
+```[bash]
 git branch -d 3-remove-s-from-git-commit-status-message
 ```
-###  Merge Conflicts
 
-You won't always be able to automatically merge code - sometimes changes with conflict with eachother, so you need to modify code to solve the conflict.  When this is the case, you'll end up at a screen like this:
+### Merge Conflicts
+
+You won't always be able to automatically merge code - sometimes changes with conflict with each other, so you need to modify code to solve the conflict.  When this is the case, you'll end up at a screen like this:
 
 ![git merge conflict](images/merge_conflict_pt0.png)
 
@@ -245,4 +247,3 @@ Life is better when you scan tiny brains.
 ### Now you are ready to tackle git
 
 ![cat_error](images/cat_error.webp)
-
