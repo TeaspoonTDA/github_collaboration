@@ -42,6 +42,8 @@ git branch
 
 It's important to note that when creating new branches, they make a copy of the branch you are currently on.  So if you are on *master* and create a new branch, it will be a copy of *master*.  In the section below on structuring releases in git we will review a recommended workflow.
 
+You can learn git commands on Git branching here: [Git branching Interactive tool](https://learngitbranching.js.org/)
+
 ### Committing and pushing changes in git
 
 Once you've made progress you'd like to save on a branch, you need to *commit* your changes, which saves them to the branch and allows you to save them on the repository on the GitHub servers for other people to access, review, and approve merges.  To see what changes are available to be committed, you can check the status:
